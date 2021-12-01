@@ -1,12 +1,13 @@
 BUILD_DIR	:= ./bin
 SRC_DIR		:= ./src
+PROD_DIR	:= ./src/ProductionTest.cpp
 
-OUTPUT_NAME	:= "firstApp"
-COMP_FILES	:= ${SRC_DIR}/main.cpp ${SRC_DIR}/Game.cpp
+OUTPUT_NAME	:= UNITCPP_Test
+COMP_FILES	:= ${SRC_DIR}/* ${PROD_DIR}
 
-INCLUDE		:= "C:\SDL2-2.0.16\i686-w64-mingw32\include\SDL2"
-LIB			:= "C:\SDL2-2.0.16\i686-w64-mingw32\lib"
-DLL			:= "-lmingw32" "-lSDL2main" "-lSDL2"
+INCLUDE		:= ${SDL_SDK}\include
+LIB			:= ${SDL_SDK}\lib
+DLL			:= "-lcppunit"
 
 MSG_START	:= "Build Started"
 MSG_END		:= "Build Complete"
