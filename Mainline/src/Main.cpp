@@ -5,6 +5,7 @@
 int main()
 {
 	Production p;
-	p.someMethod(10);
+	p.SelectNumbers();
+	system("Pause");
 	return 0;
 }
